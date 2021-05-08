@@ -47,7 +47,7 @@ namespace QuanLyCoffee.Views
             txtTenKhuVuc.DataBindings.Clear();
             txtTenKhuVuc.DataBindings.Add("Text", dgvThongTinKhuVuc.DataSource, "TenKhuVuc");
             txtDienGiai.DataBindings.Clear();
-            txtDienGiai.DataBindings.Add("Text", dgvThongTinKhuVuc.DataSource, "TenKhuVuc");
+            txtDienGiai.DataBindings.Add("Text", dgvThongTinKhuVuc.DataSource, "DienGiai");
             cboStatus.DataBindings.Clear();
             cboStatus.DataBindings.Add("Text", dgvThongTinKhuVuc.DataSource, "TrangThai");
         }

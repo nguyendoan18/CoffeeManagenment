@@ -73,7 +73,13 @@ namespace QuanLyCoffee.Models
             return Models.Connection.FillDataSet("spgetKhuVuc", CommandType.StoredProcedure);
         }
         #endregion
-
+        #region Hàm lấy trả về tên khu vực
+        public static DataSet getTenKhuVuc()
+        {
+            //Thủ tục get nhân viên đã tạo ra bên class connection
+            return Models.Connection.FillDataSet("spgetTenKhuVuc", CommandType.StoredProcedure);
+        }
+        #endregion
         public DataSet FillDataSet_GetKhuVucByIDKhuVuc()
         {
             DataSet ds = new DataSet();

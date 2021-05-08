@@ -92,5 +92,10 @@ namespace QuanLyCoffee
         {
             AddTabPage(Views.uctKhuVuc.uctKV, 4, "Hệ thống khu vực");
         }
+
+        private void bànKhuVựcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddTabPage(Views.uctBan.uctB, 4, "Bàn khu vực");
+        }
     }
 }

@@ -152,6 +152,7 @@ namespace QuanLyCoffee
             this.bànKhuVựcToolStripMenuItem.Name = "bànKhuVựcToolStripMenuItem";
             this.bànKhuVựcToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bànKhuVựcToolStripMenuItem.Text = "Bàn khu vực";
+            this.bànKhuVựcToolStripMenuItem.Click += new System.EventHandler(this.bànKhuVựcToolStripMenuItem_Click);
             // 
             // hệThốngKhuVựcToolStripMenuItem
             // 
