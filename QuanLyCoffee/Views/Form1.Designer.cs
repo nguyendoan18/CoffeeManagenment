@@ -150,14 +150,14 @@ namespace QuanLyCoffee
             // bànKhuVựcToolStripMenuItem
             // 
             this.bànKhuVựcToolStripMenuItem.Name = "bànKhuVựcToolStripMenuItem";
-            this.bànKhuVựcToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bànKhuVựcToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.bànKhuVựcToolStripMenuItem.Text = "Bàn khu vực";
             this.bànKhuVựcToolStripMenuItem.Click += new System.EventHandler(this.bànKhuVựcToolStripMenuItem_Click);
             // 
             // hệThốngKhuVựcToolStripMenuItem
             // 
             this.hệThốngKhuVựcToolStripMenuItem.Name = "hệThốngKhuVựcToolStripMenuItem";
-            this.hệThốngKhuVựcToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hệThốngKhuVựcToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.hệThốngKhuVựcToolStripMenuItem.Text = "Hệ thống khu vực";
             this.hệThốngKhuVựcToolStripMenuItem.Click += new System.EventHandler(this.hệThốngKhuVựcToolStripMenuItem_Click);
             // 
@@ -173,14 +173,16 @@ namespace QuanLyCoffee
             // loạiThựcĐơnToolStripMenuItem
             // 
             this.loạiThựcĐơnToolStripMenuItem.Name = "loạiThựcĐơnToolStripMenuItem";
-            this.loạiThựcĐơnToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.loạiThựcĐơnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loạiThựcĐơnToolStripMenuItem.Text = "Loại thực đơn";
+            this.loạiThựcĐơnToolStripMenuItem.Click += new System.EventHandler(this.loạiThựcĐơnToolStripMenuItem_Click);
             // 
             // thựcĐơnToolStripMenuItem1
             // 
             this.thựcĐơnToolStripMenuItem1.Name = "thựcĐơnToolStripMenuItem1";
-            this.thựcĐơnToolStripMenuItem1.Size = new System.Drawing.Size(147, 22);
+            this.thựcĐơnToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.thựcĐơnToolStripMenuItem1.Text = "Thực đơn";
+            this.thựcĐơnToolStripMenuItem1.Click += new System.EventHandler(this.thựcĐơnToolStripMenuItem1_Click);
             // 
             // gọiMónToolStripMenuItem
             // 

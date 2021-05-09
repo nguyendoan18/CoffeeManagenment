@@ -30,15 +30,15 @@ namespace QuanLyCoffee.Views
         private void InitializeComponent()
         {
             this.label6 = new System.Windows.Forms.Label();
-            this.dgvDSNhanVien = new System.Windows.Forms.DataGridView();
+            this.dgvDSThucDon = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboStatus = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtIDThucDon = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDonViTinh = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTenThucDon = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
@@ -46,14 +46,14 @@ namespace QuanLyCoffee.Views
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cboLoaiThucDon = new System.Windows.Forms.ComboBox();
+            this.txtDonGiaTon = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtTonToiThieu = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSNhanVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSThucDon)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -67,15 +67,15 @@ namespace QuanLyCoffee.Views
             this.label6.TabIndex = 35;
             this.label6.Text = "DANH SÁCH THỰC ĐƠN";
             // 
-            // dgvDSNhanVien
+            // dgvDSThucDon
             // 
-            this.dgvDSNhanVien.AllowUserToAddRows = false;
-            this.dgvDSNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSNhanVien.Location = new System.Drawing.Point(353, 31);
-            this.dgvDSNhanVien.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvDSNhanVien.Name = "dgvDSNhanVien";
-            this.dgvDSNhanVien.Size = new System.Drawing.Size(829, 325);
-            this.dgvDSNhanVien.TabIndex = 34;
+            this.dgvDSThucDon.AllowUserToAddRows = false;
+            this.dgvDSThucDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSThucDon.Location = new System.Drawing.Point(353, 31);
+            this.dgvDSThucDon.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDSThucDon.Name = "dgvDSThucDon";
+            this.dgvDSThucDon.Size = new System.Drawing.Size(829, 325);
+            this.dgvDSThucDon.TabIndex = 34;
             // 
             // label3
             // 
@@ -87,14 +87,14 @@ namespace QuanLyCoffee.Views
             this.label3.TabIndex = 78;
             this.label3.Text = "Trạng thái";
             // 
-            // comboBox2
+            // cboStatus
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(127, 259);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(192, 24);
-            this.comboBox2.TabIndex = 77;
+            this.cboStatus.FormattingEnabled = true;
+            this.cboStatus.Location = new System.Drawing.Point(127, 259);
+            this.cboStatus.Margin = new System.Windows.Forms.Padding(4);
+            this.cboStatus.Name = "cboStatus";
+            this.cboStatus.Size = new System.Drawing.Size(192, 24);
+            this.cboStatus.TabIndex = 77;
             // 
             // label1
             // 
@@ -106,13 +106,13 @@ namespace QuanLyCoffee.Views
             this.label1.TabIndex = 76;
             this.label1.Text = "Loại thực đơn";
             // 
-            // textBox4
+            // txtIDThucDon
             // 
-            this.textBox4.Location = new System.Drawing.Point(127, 40);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(192, 22);
-            this.textBox4.TabIndex = 75;
+            this.txtIDThucDon.Location = new System.Drawing.Point(127, 40);
+            this.txtIDThucDon.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIDThucDon.Name = "txtIDThucDon";
+            this.txtIDThucDon.Size = new System.Drawing.Size(192, 22);
+            this.txtIDThucDon.TabIndex = 75;
             // 
             // label9
             // 
@@ -124,13 +124,14 @@ namespace QuanLyCoffee.Views
             this.label9.TabIndex = 74;
             this.label9.Text = "ID Thực đơn";
             // 
-            // textBox2
+            // txtDonViTinh
             // 
-            this.textBox2.Location = new System.Drawing.Point(127, 137);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(192, 22);
-            this.textBox2.TabIndex = 73;
+            this.txtDonViTinh.Location = new System.Drawing.Point(127, 137);
+            this.txtDonViTinh.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDonViTinh.Name = "txtDonViTinh";
+            this.txtDonViTinh.Size = new System.Drawing.Size(192, 22);
+            this.txtDonViTinh.TabIndex = 73;
+            this.txtDonViTinh.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -142,13 +143,13 @@ namespace QuanLyCoffee.Views
             this.label2.TabIndex = 72;
             this.label2.Text = "Đơn vị tính";
             // 
-            // textBox3
+            // txtTenThucDon
             // 
-            this.textBox3.Location = new System.Drawing.Point(127, 105);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(192, 22);
-            this.textBox3.TabIndex = 71;
+            this.txtTenThucDon.Location = new System.Drawing.Point(127, 105);
+            this.txtTenThucDon.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenThucDon.Name = "txtTenThucDon";
+            this.txtTenThucDon.Size = new System.Drawing.Size(192, 22);
+            this.txtTenThucDon.TabIndex = 71;
             // 
             // label8
             // 
@@ -180,6 +181,7 @@ namespace QuanLyCoffee.Views
             this.btnHuy.TabIndex = 68;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
@@ -190,6 +192,7 @@ namespace QuanLyCoffee.Views
             this.btnLuu.TabIndex = 67;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoa
             // 
@@ -200,6 +203,7 @@ namespace QuanLyCoffee.Views
             this.btnXoa.TabIndex = 66;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -210,6 +214,7 @@ namespace QuanLyCoffee.Views
             this.btnSua.TabIndex = 65;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -220,23 +225,25 @@ namespace QuanLyCoffee.Views
             this.btnThem.TabIndex = 64;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // comboBox1
+            // cboLoaiThucDon
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(127, 72);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(192, 24);
-            this.comboBox1.TabIndex = 63;
+            this.cboLoaiThucDon.FormattingEnabled = true;
+            this.cboLoaiThucDon.Location = new System.Drawing.Point(127, 72);
+            this.cboLoaiThucDon.Margin = new System.Windows.Forms.Padding(4);
+            this.cboLoaiThucDon.Name = "cboLoaiThucDon";
+            this.cboLoaiThucDon.Size = new System.Drawing.Size(192, 24);
+            this.cboLoaiThucDon.TabIndex = 63;
             // 
-            // textBox1
+            // txtDonGiaTon
             // 
-            this.textBox1.Location = new System.Drawing.Point(127, 199);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 22);
-            this.textBox1.TabIndex = 82;
+            this.txtDonGiaTon.Location = new System.Drawing.Point(127, 199);
+            this.txtDonGiaTon.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDonGiaTon.Name = "txtDonGiaTon";
+            this.txtDonGiaTon.Size = new System.Drawing.Size(192, 22);
+            this.txtDonGiaTon.TabIndex = 82;
+            this.txtDonGiaTon.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label4
             // 
@@ -248,13 +255,14 @@ namespace QuanLyCoffee.Views
             this.label4.TabIndex = 81;
             this.label4.Text = "Đơn giá tồn";
             // 
-            // textBox5
+            // txtSoLuong
             // 
-            this.textBox5.Location = new System.Drawing.Point(127, 167);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(192, 22);
-            this.textBox5.TabIndex = 80;
+            this.txtSoLuong.Location = new System.Drawing.Point(127, 167);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(192, 22);
+            this.txtSoLuong.TabIndex = 80;
+            this.txtSoLuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label7
             // 
@@ -266,13 +274,14 @@ namespace QuanLyCoffee.Views
             this.label7.TabIndex = 79;
             this.label7.Text = "Số lượng";
             // 
-            // textBox7
+            // txtTonToiThieu
             // 
-            this.textBox7.Location = new System.Drawing.Point(127, 229);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(192, 22);
-            this.textBox7.TabIndex = 84;
+            this.txtTonToiThieu.Location = new System.Drawing.Point(127, 229);
+            this.txtTonToiThieu.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTonToiThieu.Name = "txtTonToiThieu";
+            this.txtTonToiThieu.Size = new System.Drawing.Size(192, 22);
+            this.txtTonToiThieu.TabIndex = 84;
+            this.txtTonToiThieu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label11
             // 
@@ -288,20 +297,20 @@ namespace QuanLyCoffee.Views
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtTonToiThieu);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDonGiaTon);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtSoLuong);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cboStatus);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtIDThucDon);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDonViTinh);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtTenThucDon);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnHuy);
@@ -309,14 +318,15 @@ namespace QuanLyCoffee.Views
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboLoaiThucDon);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dgvDSNhanVien);
+            this.Controls.Add(this.dgvDSThucDon);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uctThucDon";
             this.Size = new System.Drawing.Size(1186, 396);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSNhanVien)).EndInit();
+            this.Load += new System.EventHandler(this.uctThucDon_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSThucDon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,15 +335,15 @@ namespace QuanLyCoffee.Views
         #endregion
 
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dgvDSNhanVien;
+        private System.Windows.Forms.DataGridView dgvDSThucDon;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboStatus;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtIDThucDon;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDonViTinh;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTenThucDon;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnHuy;
@@ -341,12 +351,12 @@ namespace QuanLyCoffee.Views
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cboLoaiThucDon;
+        private System.Windows.Forms.TextBox txtDonGiaTon;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtTonToiThieu;
         private System.Windows.Forms.Label label11;
     }
 }

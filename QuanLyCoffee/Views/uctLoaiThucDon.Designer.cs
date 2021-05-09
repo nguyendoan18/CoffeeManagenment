@@ -30,22 +30,26 @@ namespace QuanLyCoffee.Views
         private void InitializeComponent()
         {
             this.label6 = new System.Windows.Forms.Label();
-            this.dgvDSNhanVien = new System.Windows.Forms.DataGridView();
+            this.dgvDSLoaiThucDon = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtTenLoaiThucDon = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDienGiai = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cboStatus = new System.Windows.Forms.ComboBox();
+            this.txtIDLoaiThucDon = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSNhanVien)).BeginInit();
+            this.IdLoaiThucDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenLoaiThucDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DienGiai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSLoaiThucDon)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -59,15 +63,20 @@ namespace QuanLyCoffee.Views
             this.label6.TabIndex = 35;
             this.label6.Text = "DANH SÁCH LOẠI THỰC ĐƠN";
             // 
-            // dgvDSNhanVien
+            // dgvDSLoaiThucDon
             // 
-            this.dgvDSNhanVien.AllowUserToAddRows = false;
-            this.dgvDSNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSNhanVien.Location = new System.Drawing.Point(4, 36);
-            this.dgvDSNhanVien.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvDSNhanVien.Name = "dgvDSNhanVien";
-            this.dgvDSNhanVien.Size = new System.Drawing.Size(662, 294);
-            this.dgvDSNhanVien.TabIndex = 34;
+            this.dgvDSLoaiThucDon.AllowUserToAddRows = false;
+            this.dgvDSLoaiThucDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSLoaiThucDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdLoaiThucDon,
+            this.TenLoaiThucDon,
+            this.DienGiai,
+            this.TrangThai});
+            this.dgvDSLoaiThucDon.Location = new System.Drawing.Point(4, 36);
+            this.dgvDSLoaiThucDon.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDSLoaiThucDon.Name = "dgvDSLoaiThucDon";
+            this.dgvDSLoaiThucDon.Size = new System.Drawing.Size(662, 294);
+            this.dgvDSLoaiThucDon.TabIndex = 34;
             // 
             // label5
             // 
@@ -88,12 +97,12 @@ namespace QuanLyCoffee.Views
             this.label3.TabIndex = 43;
             this.label3.Text = "Trạng thái";
             // 
-            // textBox4
+            // txtTenLoaiThucDon
             // 
-            this.textBox4.Location = new System.Drawing.Point(992, 47);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(114, 22);
-            this.textBox4.TabIndex = 42;
+            this.txtTenLoaiThucDon.Location = new System.Drawing.Point(992, 47);
+            this.txtTenLoaiThucDon.Name = "txtTenLoaiThucDon";
+            this.txtTenLoaiThucDon.Size = new System.Drawing.Size(114, 22);
+            this.txtTenLoaiThucDon.TabIndex = 42;
             // 
             // label4
             // 
@@ -104,12 +113,12 @@ namespace QuanLyCoffee.Views
             this.label4.TabIndex = 41;
             this.label4.Text = "Tên loại thực đơn";
             // 
-            // textBox2
+            // txtDienGiai
             // 
-            this.textBox2.Location = new System.Drawing.Point(780, 83);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(89, 22);
-            this.textBox2.TabIndex = 40;
+            this.txtDienGiai.Location = new System.Drawing.Point(780, 83);
+            this.txtDienGiai.Name = "txtDienGiai";
+            this.txtDienGiai.Size = new System.Drawing.Size(89, 22);
+            this.txtDienGiai.TabIndex = 40;
             // 
             // label2
             // 
@@ -120,20 +129,21 @@ namespace QuanLyCoffee.Views
             this.label2.TabIndex = 39;
             this.label2.Text = "Diễn giải";
             // 
-            // comboBox1
+            // cboStatus
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(992, 83);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(114, 24);
-            this.comboBox1.TabIndex = 38;
+            this.cboStatus.FormattingEnabled = true;
+            this.cboStatus.Location = new System.Drawing.Point(992, 83);
+            this.cboStatus.Name = "cboStatus";
+            this.cboStatus.Size = new System.Drawing.Size(114, 24);
+            this.cboStatus.TabIndex = 38;
             // 
-            // textBox1
+            // txtIDLoaiThucDon
             // 
-            this.textBox1.Location = new System.Drawing.Point(780, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(89, 22);
-            this.textBox1.TabIndex = 37;
+            this.txtIDLoaiThucDon.Enabled = false;
+            this.txtIDLoaiThucDon.Location = new System.Drawing.Point(780, 50);
+            this.txtIDLoaiThucDon.Name = "txtIDLoaiThucDon";
+            this.txtIDLoaiThucDon.Size = new System.Drawing.Size(89, 22);
+            this.txtIDLoaiThucDon.TabIndex = 37;
             // 
             // label1
             // 
@@ -153,6 +163,7 @@ namespace QuanLyCoffee.Views
             this.btnHuy.TabIndex = 54;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
@@ -163,6 +174,7 @@ namespace QuanLyCoffee.Views
             this.btnLuu.TabIndex = 53;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoa
             // 
@@ -173,6 +185,7 @@ namespace QuanLyCoffee.Views
             this.btnXoa.TabIndex = 52;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -183,6 +196,7 @@ namespace QuanLyCoffee.Views
             this.btnSua.TabIndex = 51;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -193,6 +207,31 @@ namespace QuanLyCoffee.Views
             this.btnThem.TabIndex = 50;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // IdLoaiThucDon
+            // 
+            this.IdLoaiThucDon.DataPropertyName = "IdLoaiThucDon";
+            this.IdLoaiThucDon.HeaderText = "ID Loại Thực Đơn";
+            this.IdLoaiThucDon.Name = "IdLoaiThucDon";
+            // 
+            // TenLoaiThucDon
+            // 
+            this.TenLoaiThucDon.DataPropertyName = "TenLoaiThucDon";
+            this.TenLoaiThucDon.HeaderText = "Tên Loại Thực Đơn";
+            this.TenLoaiThucDon.Name = "TenLoaiThucDon";
+            // 
+            // DienGiai
+            // 
+            this.DienGiai.DataPropertyName = "DienGiai";
+            this.DienGiai.HeaderText = "Diễn Giải";
+            this.DienGiai.Name = "DienGiai";
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.DataPropertyName = "TrangThai";
+            this.TrangThai.HeaderText = "Trạng Thái";
+            this.TrangThai.Name = "TrangThai";
             // 
             // uctLoaiThucDon
             // 
@@ -205,20 +244,21 @@ namespace QuanLyCoffee.Views
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtTenLoaiThucDon);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDienGiai);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cboStatus);
+            this.Controls.Add(this.txtIDLoaiThucDon);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dgvDSNhanVien);
+            this.Controls.Add(this.dgvDSLoaiThucDon);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uctLoaiThucDon";
             this.Size = new System.Drawing.Size(1117, 352);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSNhanVien)).EndInit();
+            this.Load += new System.EventHandler(this.uctLoaiThucDon_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSLoaiThucDon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,20 +267,24 @@ namespace QuanLyCoffee.Views
         #endregion
 
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dgvDSNhanVien;
+        private System.Windows.Forms.DataGridView dgvDSLoaiThucDon;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtTenLoaiThucDon;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDienGiai;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cboStatus;
+        private System.Windows.Forms.TextBox txtIDLoaiThucDon;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdLoaiThucDon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenLoaiThucDon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DienGiai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
     }
 }
