@@ -173,14 +173,14 @@ namespace QuanLyCoffee
             // loạiThựcĐơnToolStripMenuItem
             // 
             this.loạiThựcĐơnToolStripMenuItem.Name = "loạiThựcĐơnToolStripMenuItem";
-            this.loạiThựcĐơnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loạiThựcĐơnToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.loạiThựcĐơnToolStripMenuItem.Text = "Loại thực đơn";
             this.loạiThựcĐơnToolStripMenuItem.Click += new System.EventHandler(this.loạiThựcĐơnToolStripMenuItem_Click);
             // 
             // thựcĐơnToolStripMenuItem1
             // 
             this.thựcĐơnToolStripMenuItem1.Name = "thựcĐơnToolStripMenuItem1";
-            this.thựcĐơnToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.thựcĐơnToolStripMenuItem1.Size = new System.Drawing.Size(147, 22);
             this.thựcĐơnToolStripMenuItem1.Text = "Thực đơn";
             this.thựcĐơnToolStripMenuItem1.Click += new System.EventHandler(this.thựcĐơnToolStripMenuItem1_Click);
             // 
@@ -189,6 +189,7 @@ namespace QuanLyCoffee
             this.gọiMónToolStripMenuItem.Name = "gọiMónToolStripMenuItem";
             this.gọiMónToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.gọiMónToolStripMenuItem.Text = "Gọi món";
+            this.gọiMónToolStripMenuItem.Click += new System.EventHandler(this.gọiMónToolStripMenuItem_Click);
             // 
             // thuChiToolStripMenuItem
             // 

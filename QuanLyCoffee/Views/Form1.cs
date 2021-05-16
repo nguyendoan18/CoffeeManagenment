@@ -107,5 +107,10 @@ namespace QuanLyCoffee
         {
             AddTabPage(Views.uctThucDon.uctTD, 4, "Thực đơn");
         }
+
+        private void gọiMónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddTabPage(Views.uctGoiMon.uctGM, 4, "Gọi món");
+        }
     }
 }
